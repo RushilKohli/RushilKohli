@@ -1,0 +1,45 @@
+﻿<Window x:Class="ShapeAnimator.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:local="clr-namespace:ShapeAnimator"
+mc:Ignorable="d"
+Title="MainWindow" Height="500" Width="1000">
+    <Grid>
+        <Canvas Name="ShapeCanvas"
+                Margin="0,0,0,56" Background="Black"
+                MouseDown="Canvas_MouseDown"/>
+        <Button Content="Circle" HorizontalAlignment="Left"
+                Margin="200,424,0,0"
+                VerticalAlignment="Top"
+                Click="Circle_Click" Height="26" Width="55"
+        />
+        <Button Content="Square" HorizontalAlignment="Left"
+                Margin="300,424,0,0"
+                VerticalAlignment="Top"
+                Click="Square_Click" Height="26" Width="55"
+        />
+        <Button Content="Rectangle" HorizontalAlignment="Left"
+                Margin="400,424,0,0"
+                VerticalAlignment="Top"
+                Click="Rectangle_Click" Height="26" Width="55"
+        />
+        <Button Content="Step" HorizontalAlignment="Left"
+                Margin="500,424,0,0"
+                VerticalAlignment="Top"
+                Click="Step_Click" Height="26" Width="55"
+        />
+
+        <Button Content="Play" HorizontalAlignment="Left"
+                Margin="600,424,0,0" 
+                VerticalAlignment="Top"
+                Click="Play_Click" Height="26" Width="56"
+         />
+        <Button Content="Pause" HorizontalAlignment="Left"
+                Margin="700,424,0,0" 
+                VerticalAlignment="Top"
+                Click="Pause_Click" Height="26" Width="56"
+         />
+    </Grid>
+</Window>
