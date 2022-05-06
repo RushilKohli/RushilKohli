@@ -1,0 +1,66 @@
+<!--
+    index.html
+    html for assgnment 1
+
+    AUTHOR: Rushil Kohli
+    DATE: 2022-02-03
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive DeBuggers</title>
+
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+    <div id="title">DeBugger</div>
+    <div class="fullblock">
+        <canvas id="webglView"></canvas>
+        <div class="thumbblock">
+            <div class="thumb">
+                <img class="thumbimage" id="thumb_debugger" src="img/thumb_debugger.png">
+                <div class="thumbcaption">DeBugger</div>
+            </div>
+            <div class="thumb">
+                <img class="thumbimage" id="thumb_celestia" src="img/thumb_celestia.png">
+                <div class="thumbcaption">Celestia</div>
+            </div>
+            <div class="thumb">
+                <img class="thumbimage" id="thumb_totoro" src="img/thumb_totoro.png">
+                <div class="thumbcaptionTotoro">Totoro</div>
+            </div>
+            <div class="thumb">
+                <img class="thumbimage" id="thumb_luckycat" src="img/thumb_luckycat.png">
+                <div class="thumbcaption">Lucky Cat</div>
+            </div>
+            <div class="thumb">
+                <img class="thumbimage" id="thumb_beethoven" src="img/thumb_beethoven.png">
+                <div class="thumbcaptionBeethoven">Beethoven</div>
+            </div>
+        </div>
+
+        
+        <div class="control">
+            <input type="checkbox" id="texture" name="texture" value="Texture" checked>
+            <label for="texture">Texture</label><br>
+            <input type="checkbox" id="spin" name="spin" value="Spin">
+            <label for="spin">Spin</label><br>
+            <button id="resetCamera">Reset Camera</button>
+        </div>
+        <div class="copyright">&copy; 2022</div>
+    </div>       
+</body>
+<!-- JavaScript -->
+<script src="http://ejd.songho.ca/syst24444/Smal.js"></script>
+    <script src="http://ejd.songho.ca/syst24444/webgl.js"></script>
+    <script src="http://ejd.songho.ca/syst24444/Logger.js"></script>
+    <script src="js/main.js"></script>
+   
+</html>

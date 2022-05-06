@@ -1,0 +1,130 @@
+/* main.css
+styles for assignment 1
+
+// AUTHOR: Rushil Kohli
+// DATE: 2022-02-03
+*/
+
+body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    line-height:0;
+}
+
+.fullblock {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.thumbblock {
+    display:flex;
+    flex-direction: column;
+    gap:1vh;
+    position:absolute;
+    right: 10px;
+    top: 50vh;
+    transform: translate(0, -50%);
+}
+
+.thumb {
+    width:15vh;
+    height:15vh;
+    border:2px solid gray;
+    height: 15vh;
+    width: 15vh;
+}
+
+.thumbcaption {
+    transform: translate(12%, 0);
+    margin-top: -10%;
+    font-size: calc(1em, 2vw);
+}
+
+.thumbcaptionTotoro {
+    transform: translate(24%, 0);
+    margin-top: -8%;
+    font-size: calc(1em, 2vw);
+}
+
+.thumbcaptionBeethoven {
+    transform: translate(12%, 0);
+    margin-top: -6%;
+    font-size: calc(1em, 2vw);
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.thumb img:hover {
+    background: rgb(199, 199, 199);
+}
+
+
+#title {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 45%;
+    font-size: 3em;
+    transform:translate(-50, 0);
+    line-height: 1.2em;
+}
+
+.control {
+    position:absolute;
+    top:5px;
+    left:5px;
+    line-height:1.2em;
+}
+
+.copyright {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    line-height:1.2em;
+}
+
+@media screen and (orientation:portrait) {
+    /* Portrait styles */
+    
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+   
+}
+
+
+@media (max-aspect-ratio:1/1) {
+    .thumbblock {
+        display:flex;
+        flex-direction: row;
+        gap:1vh;
+        position:absolute;
+        right: 10px;
+        top: 90vh;
+        transform: translate(0, -50%);
+    }
+
+    .thumb {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .thumbimage {
+        background-color: rgb(199, 199, 199);
+        opacity: 0.6;
+    }
+    
+    .thumbcaption {
+        transform: translate(12%, 0);
+        margin-top: -10%;
+        font-size: calc(1em, 2vw);
+    }
+}
